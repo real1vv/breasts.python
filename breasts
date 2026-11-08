@@ -10,7 +10,7 @@ RESET = '\033[0m'
 while True:
     a=input("빈유 or 거유?(Small breasts or Big breasts?) y(빈유(small))/n(거유(big)):")
     print()
-    if a=="y":
+    if a.lower()=="y":
           d=[]
           for y in range(19):
                 d.append([])
@@ -29,7 +29,7 @@ while True:
                             d[y].append(2)
                       else:
                             d[y].append(0)
-    elif a=="n":
+    elif a.lower()=="n":
           d=[]
           for y in range(19):
                 d.append([])
